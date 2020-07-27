@@ -1,5 +1,5 @@
 # Simple-Python-Projects
-1. Guess The Number
+##### Guess The Number
     Implemented using if-elseif-else
-2. Roll The Dice 
+##### Roll The Dice 
     Implemented using switcher(switch case)
