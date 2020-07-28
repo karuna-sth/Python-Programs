@@ -7,13 +7,13 @@ data = json.load(open("data.json"))
 def translate(w):
     w = w.lower()
     if w in data:
-        return str(data['word'][0])
+        return data['word']
     elif len(get_close_matches(w, data.keys(), cutoff=0.8)) > 0:
         ans = input(f'Is the word you entered \'{get_close_matches(w, data.keys())[0]}\' (y/n)?')
         if ans == 'y' or ans == 'Y':
             return data[get_close_matches(w, data.keys())[0]]
         else:
-            print("The word may be misspelled. Please check the word.")
+            print("The word isn't understandable")
     else:
         print("The word may be misspelled. Please check the word.")
 
