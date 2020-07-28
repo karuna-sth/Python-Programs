@@ -28,11 +28,11 @@ while True:
            "|    0   |\n"
            "| 0    0 |\n"
            "----------",
-        6:"----------\n"
-          "| 0    0 |\n"
-          "| 0    0 |\n"
-          "| 0    0 |\n"
-          "----------",
+        6: "----------\n"
+           "| 0    0 |\n"
+           "| 0    0 |\n"
+           "| 0    0 |\n"
+           "----------",
     }
     print(switcher.get(number))
     choice = input("Do you want to roll again(y/n):")
