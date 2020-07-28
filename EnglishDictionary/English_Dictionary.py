@@ -7,7 +7,7 @@ data = json.load(open("data.json"))
 def translate(w):
     w = w.lower()
     if w in data:
-        return data['word']
+        return data[word]
     elif len(get_close_matches(w, data.keys(), cutoff=0.8)) > 0:
         ans = input(f'Is the word you entered \'{get_close_matches(w, data.keys())[0]}\' (y/n)?')
         if ans == 'y' or ans == 'Y':
