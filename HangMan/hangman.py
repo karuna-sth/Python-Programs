@@ -64,7 +64,7 @@ while True:
                 word_list.append(word)
 
     random_number = random.randint(1, 9477)
-    word_to_guess = "hello"  # word_list[random_number]
+    word_to_guess = word_list[random_number]
     word_after_guess = []
     wrong_guess = 0
     for _ in range(0, len(word_to_guess)):
@@ -86,7 +86,7 @@ while True:
 
             print(man(wrong_guess))
             if wrong_guess == 7:
-                print("Game Over")
+                print(f'Game Over. The word was {word_to_guess}')
                 break
 
     y_n = input("Do you wanna play again(y/n):")
