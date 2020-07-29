@@ -5,6 +5,6 @@ Implemented using if-elseif-else
 Implemented using switcher(switch case)
 ##### [English Dictionary](https://github.com/karxth/Simple-Python-Projects/tree/master/EnglishDictionary)
 Simple Dictionary Application
-##### [Hang Man] (https://github.com/karxth/Simple-Python-Projects/tree/master/HangMan)
+##### [Hang Man](https://github.com/karxth/Simple-Python-Projects/tree/master/HangMan)
 Hang man game 
 
