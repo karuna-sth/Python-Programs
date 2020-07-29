@@ -57,7 +57,7 @@ def man(num):
 
 while True:
     word_list = []
-    with open("wordList.txt", "r+") as words:
+    with open("wordList.txt", "r") as words:
         for word in words:
             word = str(word).rstrip("\n")
             if len(word) > 2:
