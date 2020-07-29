@@ -5,37 +5,54 @@ player_name = input("Enter your name\n")
 
 def man(num):
     if num == 1:
-        return "----------\n" \
-               "     0     "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|         |\n" \
+               "|         |\n" \
+               "|         |\n" \
+               "-----------"
     elif num == 2:
-        return "----------\n" \
-               "     0    \n" \
-               "     |      "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|    |    |\n" \
+               "|         |\n" \
+               "|         |\n" \
+               "-----------"
     elif num == 3:
-        return "----------\n" \
-               "     0    \n" \
-               "    /|    \n"
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|   /|    |\n" \
+               "|         |\n" \
+               "|         |\n" \
+               "-----------"
     elif num == 4:
-        return "----------\n" \
-               "     0    \n" \
-               "    /|\     "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|   /|\   |\n" \
+               "|         |\n" \
+               "|         |\n" \
+               "-----------"
     elif num == 5:
-        return "----------\n" \
-               "     0    \n" \
-               "    /|\   \n" \
-               "     |      "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|   /|\   |\n" \
+               "|    |    |\n" \
+               "|         |\n" \
+               "-----------"
     elif num == 6:
-        return "----------\n" \
-               "     0    \n" \
-               "    /|\   \n" \
-               "     |    \n" \
-               "    /      "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|   /|\   |\n" \
+               "|    |    |\n" \
+               "|   /     |\n" \
+               "-----------"
     else:
-        return "----------\n" \
-               "     0    \n" \
-               "    /|\   \n" \
-               "     |    \n" \
-               "    / \     "
+        return "-----------\n" \
+               "|    0    |\n" \
+               "|   /|\   |\n" \
+               "|    |    |\n" \
+               "|   / \   |\n" \
+               "-----------"
 
 
 while True:
@@ -56,15 +73,17 @@ while True:
     while True:
         word_guessed = input("Take a guess ")
         if word_guessed in word_to_guess:
-            loc = word_to_guess.index(word_guessed)
-            word_after_guess[loc] = word_guessed
+            loc = [i for i, x in enumerate(word_to_guess) if x == word_guessed]
+            for i in loc:
+                word_after_guess[i] = word_guessed
             print("".join(word_after_guess))
             if "_" not in word_after_guess:
                 print(f'Congratulation {player_name} You Win!!, You Guessed right')
                 break
         else:
-            print("".join(word_after_guess))
+            print(f'{"".join(word_after_guess)}\nWrong Guess')
             wrong_guess += 1
+
             print(man(wrong_guess))
             if wrong_guess == 7:
                 print("Game Over")
