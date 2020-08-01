@@ -5,7 +5,7 @@ player_name = input("Enter your name\n")
 
 def man(num):
     if num == 1:
-        return "-----------\n" \
+        return "-----------\n"\
                "|    0    |\n"\
                "|         |\n"\
                "|         |\n"\
@@ -62,16 +62,21 @@ while True:
             word = str(word).rstrip("\n")
             if len(word) > 2:
                 word_list.append(word)
-
     random_number = random.randint(1, 9477)
     word_to_guess = word_list[random_number]
     word_after_guess = []
+    guessed_letter = []
     wrong_guess = 0
     for _ in range(0, len(word_to_guess)):
         word_after_guess.append("_")
     print("".join(word_after_guess))
     while True:
         word_guessed = input("Take a guess ")
+        if word_guessed in guessed_letter:
+            print(f'You have already guessed letter \'{word_guessed}\' ')
+            continue
+        else:
+            guessed_letter.append(word_guessed)
         if word_guessed in word_to_guess:
             loc = [i for i, x in enumerate(word_to_guess) if x == word_guessed]
             for i in loc:
