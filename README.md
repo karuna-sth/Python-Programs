@@ -7,6 +7,6 @@ Implemented using switcher(switch case)
 Simple Dictionary Application
 ##### [Hang Man](https://github.com/karxth/Simple-Python-Projects/tree/master/HangMan)
 Simple Hang Man game 
-##### [Feet to Meter Convertor](https://github.com/karxth/Simple-Python-Projects/tree/master/HangMan)
+##### [Feet to Meter Convertor](https://github.com/karxth/Simple-Python-Projects/tree/master/FeetToMeters)
 GUI application for feet to meter convertor using tkinter
 
