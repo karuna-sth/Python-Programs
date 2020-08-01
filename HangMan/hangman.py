@@ -91,7 +91,7 @@ while True:
 
             print(man(wrong_guess))
             if wrong_guess == 7:
-                print(f'Game Over. The word was {word_to_guess}')
+                print(f'Game Over. The word was {word_to_guess}\n')
                 break
 
     y_n = input("Do you wanna play again(y/n):")
