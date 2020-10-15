@@ -1,11 +1,22 @@
-# Simple Python Projects
+# Python Programs
+This Repository contains simple python programs and GUI application using Python Library Tkinter.
+### Simple Programs
 ##### [Guess The Number](https://github.com/karxth/Simple-Python-Projects/blob/master/Guess_The_Number.py)
 Implemented using if-elseif-else
 ##### [Roll The Dice](https://github.com/karxth/Simple-Python-Projects/blob/master/Roll_the_dice) 
 Implemented using switcher(switch case)
 ##### [English Dictionary](https://github.com/karxth/Simple-Python-Projects/tree/master/EnglishDictionary)
-Simple Dictionary Application
+Dictionary Application.
 ##### [Hang Man](https://github.com/karxth/Simple-Python-Projects/tree/master/HangMan)
-Simple Hang Man game 
+Hang Man game.
+### GUI Applications
+##### [Currency Convertor](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/CurrencyConvertor.py)
+It converts the currency when user gives input rate and amount is entered.
+##### [Tip Calculator](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/TipCalculator.py)
+It calculates tips on the basis of Tip percentage.
+##### [Feet to CM and Vice versa](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/feetToCentimeter.py)
+It converts feet to cm and vice versa
+
+
 
 
