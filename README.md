@@ -11,11 +11,11 @@ Dictionary Application.
 Hang Man game.
 ### GUI Applications
 ##### [Currency Convertor](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/CurrencyConvertor.py)
-It converts the currency when user gives input rate and amount is entered.
+Converts the currency when user gives input rate and amount is entered.
 ##### [Tip Calculator](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/TipCalculator.py)
-It calculates tips on the basis of Tip percentage.
+Calculates tips on the basis of Tip percentage.
 ##### [Feet to CM and Vice versa](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/feetToCentimeter.py)
-It converts feet to cm and vice versa
+Converts feet to cm and vice versa
 
 
 
