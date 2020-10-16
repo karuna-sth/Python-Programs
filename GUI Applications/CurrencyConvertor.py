@@ -17,11 +17,11 @@ class CurrencyConvertor(object):
         self.root.mainloop()
 
     def create_widgets(self):
-        Label(self.root, text="Amount to Convert").grid(row=0, column=0, padx=30, pady=40)
+        Label(self.root, text="Amount to Convert").grid(row=0, column=0, padx=30, pady=30, sticky="W")
         Entry(self.root, textvariable=self.amount).grid(row=0, column=1)
-        Label(self.root, text="Conversion Rate").grid(row=1, column=0)
+        Label(self.root, text="Conversion Rate").grid(row=1, column=0,  padx=30, pady=30, sticky="W")
         Entry(self.root, textvariable=self.rate).grid(row=1, column=1)
-        Label(self.root, text="Converted Amount").grid(row=2, column=0, padx=30, pady=40)
+        Label(self.root, text="Converted Amount").grid(row=2, column=0, padx=30, pady=30, sticky="W")
         Label(self.root, textvariable=self.converted).grid(row=2, column=1)
 
     def create_buttons(self):
