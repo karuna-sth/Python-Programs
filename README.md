@@ -16,8 +16,7 @@ Converts the currency when user gives input rate and amount is entered.
 Calculates tips on the basis of Tip percentage.
 ##### [Feet to CM and Vice versa](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/feetToCentimeter.py)
 Converts feet to cm and vice versa
-
-
-
+##### [Loan Calculator](https://github.com/karxth/Python-Programs/blob/master/GUI%20Applications/LoanCalcuator.py)
+Calculates Loan amount to be paid.
 
 
